@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "static_page/home"
+  get "static_page/about"
   resources :posts
   resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
