@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get "static_page/home"
-  get "static_page/about"
+  get "home", to: "static_page#home"
+  get "about", to: "static_page#about"
+  get "signup", to: "users#new"
   resources :posts
   resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
